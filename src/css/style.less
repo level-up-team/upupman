@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@import "lib/normalize";
+@import "lib/buttons";
+
+body {
+  background-color: #eee;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 15px;
+
+  & > canvas {
+    box-sizing: border-box;
+    outline: 2px solid #CCCCCC;
+    background-color: #FFFF99;
+  }
+
+  & > textarea {
+    box-sizing: border-box;
+    display: block;
+    resize: none;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 6px;
+    border: 2px solid #229ffd;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
